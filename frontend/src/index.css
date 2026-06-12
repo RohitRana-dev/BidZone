@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.register-container{
+  background-color: #e6f3fd;
+  width: 100%;
+}
+.register-form-container{
+  max-width: 500px;
+}
+.register-form-container .register-logo{
+  width: 100%;
+  max-width: 200px;
+}
+.primary-p-color{
+  color: #7e869a;
+}
+.register-form input:focus-visible{
+  outline: none;
+}
+.primary-btn{
+  background: #6328e1;
+}
+.primary-btn:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.nav-list .logout,
+.nav-list a{
+  position: relative;
+  display: flex;
+  gap:10px;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.nav-list .logout:hover,
+.nav-list a:hover,
+.nav-list a.active{
+  background: #1a1b43;
+  color: #ad7ff5;
+  border-radius: 10px;
+}
+
+.navBar-container{
+  max-width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebarCollapsed-active .nav-list .logout, .sidebarCollapsed-active .nav-list a {
+    gap: 0;
+    font-size: 0;
+    width: auto;
+}
+.navBar-container.sidebarCollapsed-active {
+    max-width: 80px;
+    overflow: hidden;
+}
+
+.sidebarCollapsed-active .mainlogo img{
+  min-width: 200px;
+}
+.sidebarCollapsed-active .mainlogo{
+  padding-left: 20px;
+}
+
+.profile-dropdown.absolute {
+    top: 90%;
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.profile-dropdown.absolute a:hover{
+  color:#ad7ff5;
+}
+.primary-text-color{
+  color:#ad7ff5;
+}
+.sec-text-color{
+  color: #85899a;
+}
+.stdropdown-menu {
+  color: black;
+}
+.stsearch-box input{
+  border:none !important  ;
+}
+.stsearch-box svg{
+  fill: white;
+}
+.stdropdown-container{
+  border-color: #7e869a !important;
+}
